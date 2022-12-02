@@ -2,12 +2,13 @@ body{
     font-family: "Roboto" ,sans-serif;
 }
 .container{
-    width: 1200px;
+   justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
     
     margin-left: auto;
     margin-right: auto;
+    
 }
 .visually-hidden {
     position: absolute;
@@ -41,4 +42,20 @@ body{
     }
     ul{
         list-style-type: none;
+    }
+    .section{
+        width: 100%;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
+    
+        @media screen and (min-width: $mobile) {
+            width: 480px;
+        }
+        @media screen and (min-width: $tablet) {
+            width: 768px;
+        }
+        @media screen and (min-width: $dekstop) {
+            width: 1200px;
+        }
     }

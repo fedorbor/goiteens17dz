@@ -1,30 +1,66 @@
 
 .special{
+  @media screen and (min-width: $tablet) { 
+    @media screen and (max-width: 1199px) {
+    
+ 
+    
+
     display: flex;
+    
+    flex-wrap: wrap;
+    margin: -15px;
+} }
+  @media screen and (min-width: $dekstop) {
+    flex-wrap: nowrap;
+    
     justify-content: space-between;
+}
     margin-top: 94px;
 }
 .spech{
 justify-content: center;
 }
-.specit{
-    width: 270px
+.specit:not(:last-child){
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
 }
+.specit{
+  @media screen and (min-width: $tablet) {
+    
+     margin: 15px;
+  width: calc( (100% - 60px) / 2);
+}
+ 
+}
+
 .diagram , .astronaut , .clock , .antenna{
     width: 70px;
     height: 70px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
+   
   }
   .specdiv{
-    width: 270px;
+    
     height: 120px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #F5F4FA;
+    @media screen and (min-width: $mobile) {
+    
+    }
   }
   .special{
     list-style-type: none;
+  }
+  .shech3{
+    font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 10px;
   }

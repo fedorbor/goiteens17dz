@@ -1,6 +1,17 @@
 
 .section.ourteam{
   background-color: #F5F4FA;
+  @media screen and (min-width: $tablet) { 
+    @media screen and (max-width: 1199px) {
+    
+ 
+    
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin: -15px;
+} }
 }
 
 .teamname{
@@ -35,13 +46,28 @@ letter-spacing: 0.03em;
 text-align: center;
 
 }
-.oc{
-    display: flex;
-}
+
 .ocl{
-    display: flex;
+    @media screen and (min-width: $tablet) { 
+        margin-bottom: 30px;
+        display: flex;
+        @media screen and (max-width: 1199px) {
+        
+     margin-left: 30px;
+        
+    
+       
+        
+        flex-wrap: wrap;
+        margin: -15px;
+    } }
+    @media screen and (min-width: $mobile){
+
+    }
+    
     margin-bottom: 94px;
     list-style-type: none
+    
 }
 .oci{
     
@@ -49,7 +75,9 @@ text-align: center;
     width: 270px;
     height: 428px;
     background-color: #fff;
-    
+    @media screen and (max-width: 1199px){
+        margin-bottom: 30px;
+    }
 }
 .iconc{
     width: 20px;

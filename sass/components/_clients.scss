@@ -2,6 +2,15 @@
     display: flex;
     list-style-type: none;
     margin-bottom: 94px;
+    @media screen and (max-width: 1199px){
+        flex-wrap: wrap;
+        @media screen and (min-width: 768px){
+        width: 606px;
+    }
+    @media screen and (max-width: 479px){
+        width: 404px;
+    }
+}
 }
 .customerlink{
     width: 170px;
@@ -14,6 +23,7 @@
     fill: currentColor;
     margin-right: 30px;
     border-radius: 4px;
+    margin-bottom: 30px;
     
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

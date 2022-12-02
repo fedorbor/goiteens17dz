@@ -3,7 +3,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -50,6 +52,30 @@ ul {
 
 ul {
   list-style-type: none;
+}
+
+.section {
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+  }
 }
 
 .footer {
@@ -515,6 +541,16 @@ span {
 .section.ourteam {
   background-color: #F5F4FA;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section.ourteam {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
 .teamname {
   font-size: 16px;
@@ -545,25 +581,36 @@ span {
   text-align: center;
 }
 
-.oc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .ocl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 94px;
   list-style-type: none;
 }
-
+@media screen and (min-width: 768px) {
+  .ocl {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .ocl {
+    margin-left: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 .oci {
   margin-left: 15px;
   width: 270px;
   height: 428px;
   background-color: #fff;
+}
+@media screen and (max-width: 1199px) {
+  .oci {
+    margin-bottom: 30px;
+  }
 }
 
 .iconc {
@@ -672,28 +719,28 @@ span {
   position: relative;
 }
 
-.pbl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.pb:not(:first-child) {
-  margin-left: 8px;
-}
-
 .customerlist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   margin-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .customerlist {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .customerlist {
+    width: 606px;
+  }
+}
+@media screen and (max-width: 1199px) and (max-width: 479px) {
+  .customerlist {
+    width: 404px;
+  }
 }
 
 .customerlink {
@@ -713,6 +760,7 @@ span {
   fill: currentColor;
   margin-right: 30px;
   border-radius: 4px;
+  margin-bottom: 30px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,13 +785,26 @@ span {
 }
 
 .special {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 94px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .special {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .special {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .spech {
@@ -752,22 +813,29 @@ span {
           justify-content: center;
 }
 
-.specit {
-  width: 270px;
+@media screen and (max-width: 767px) {
+  .specit:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .specit {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .diagram, .astronaut, .clock, .antenna {
   width: 70px;
   height: 70px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .specdiv {
-  width: 270px;
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -776,7 +844,78 @@ span {
           align-items: center;
   background: #F5F4FA;
 }
-
 .special {
   list-style-type: none;
+}
+
+.shech3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.exl {
+  margin: 15px;
+  width: calc((100% - 90px) / 3);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pb {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 26px;
+  font-weight: 500;
+  font-size: 16px;
+  Line-height: 26px;
+  text-align: center;
+  Letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pb:hover,
+.pb:focus {
+  background-color: rgb(72, 118, 245);
+  color: #f5f4fa;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725);
+  -webkit-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+.pbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.pb:not(:first-child) {
+  margin-left: 8px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,5 @@
 @import "./variables/mixin";
-
-
+@import "./variables/breakpoint";
 @import "./base/base";
 @import "./components/footer";
 @import "./components/header";
@@ -8,7 +7,7 @@
 @import "./components/ourteam";
 @import "./components/hero";
 @import "./components/whatwedo";
-@import "./components/index2";
+
 @import "./components/clients";
 @import "./components/specials";
 @import "./components/portfolio/footer";
