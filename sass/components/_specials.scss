@@ -1,12 +1,13 @@
 
 .special{
   @media screen and (min-width: $tablet) { 
+    display: flex;
     @media screen and (max-width: 1199px) {
     
  
     
 
-    display: flex;
+    
     
     flex-wrap: wrap;
     margin: -15px;
