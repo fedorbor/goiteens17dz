@@ -41,3 +41,23 @@ transition-property: background-color;
     text-align: center;
     background-repeat: repeat-x;
 }
+.mth{
+    font-family: Roboto;
+
+letter-spacing: 0.06em;
+text-align: center;
+
+    @media screen and (max-width:1199px){
+    font-family: Roboto;
+font-size: 26px;
+font-weight: 900;
+line-height: 42px;
+letter-spacing: 0.06em;
+text-align: center;
+}
+@media screen and (min-width:1200px){
+font-size: 44px;
+font-weight: 900;
+line-height: 60px;
+}
+}

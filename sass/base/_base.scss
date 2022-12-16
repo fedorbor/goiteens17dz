@@ -1,13 +1,28 @@
 body{
     font-family: "Roboto" ,sans-serif;
+    justify-items: center;
 }
 .container{
-   justify-content: center;
+   
     padding-left: 15px;
     padding-right: 15px;
     
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $dekstop) {
+        width: 1200px;
+        justify-content: center;
+align-items: center;
+margin-right: 0;
+margin-left: 215px;
+    }
     
 }
 .visually-hidden {
@@ -44,18 +59,10 @@ body{
         list-style-type: none;
     }
     .section{
-        width: 100%;
+        
     padding-top: 94px;
     padding-bottom: 94px;
-    justify-content: center;
     
-        @media screen and (min-width: $mobile) {
-            width: 480px;
-        }
-        @media screen and (min-width: $tablet) {
-            width: 768px;
-        }
-        @media screen and (min-width: $dekstop) {
-            width: 1200px;
-        }
+    
+       
     }

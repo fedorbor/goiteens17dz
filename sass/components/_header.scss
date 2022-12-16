@@ -48,6 +48,11 @@ span{
     color: currentColor;
     text-decoration: none;
     background-repeat: no-repeat;
+    @media screen and (min-width:768px){
+        @media screen and (max-width:1199px){
+           color: #757575;
+        }
+    }
   }
   .post{
     @media screen and (max-width:767px){

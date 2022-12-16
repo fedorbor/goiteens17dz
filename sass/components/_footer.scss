@@ -36,17 +36,43 @@ text-align: center;
 letter-spacing: 0.06em;
 
 color: #FFFFFF;
-
+@media screen and (max-width:1199px){
+    align-self: center;
+    margin-top: 20px;
+ }
 }
 .divsend{
     position: relative;
 }
 .send{
+    @media screen and (max-width:767px){
+        margin-left: 15px;
+        
+     }
      padding-top: 72px;
      margin-left: 20px;
+     @media screen and (max-width:1199px){
+
+        @media screen and (min-width:768px){
+            
+            margin-left: 166px;
+         }
+        
+        
+     }
+     
 }
 .sendul{
     display: flex;
+    @media screen and (max-width:1199px){
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width:$tablet){
+            width: 450px;
+
+        }
+    }
 }
 .sendinput{
     padding-left: 16px;
@@ -100,9 +126,14 @@ text-decoration: none;
 
 }
 .studio2div{
+    @media screen and (max-width:767px){
+    margin: 0;
+    padding: 0;
+}
     margin-left: 215px;
 
 padding-top: 60px;
+
 }
 .adress{
     width: 231px;
@@ -111,6 +142,10 @@ padding-top: 20px;
 padding-left: 215px;
 padding-bottom: 60px;
 text-decoration: none;
+@media screen and (max-width:767px){
+    margin: 0;
+    padding: 0;
+}
 }
 .adressitem{
     
@@ -157,6 +192,22 @@ margin-top: 0;
 
     .footerul{
         display: flex;
+        @media screen and (max-width:1199px){
+            
+    flex-wrap: wrap;
+    margin: -15px;
+    @media screen and (min-width:$tablet){
+        width: 768px;
+    }
+        }
+        @media screen and (max-width:767px){
+            padding-top: 60px;
+            padding-bottom: 60px;
+            align-items: center;
+            justify-content: center;
+            width: 480px;
+           
+        }
     }
     .iconc2{
         width: 20px;
@@ -194,9 +245,16 @@ margin-top: 0;
         
     }
     .conectdiv{
+        @media screen and (max-width:767px){
+            margin-left: 137px;
+            margin-right: 137px;
+            padding: 0;
+            margin-top: 60px;
+        }
        padding-top: 72px;
        padding-left: 70px;
        padding-bottom: 100px;
+
     }
 
 
